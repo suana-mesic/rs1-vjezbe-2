@@ -18,5 +18,11 @@ namespace WebApplication1.Controllers
                 DateCreated = DateTime.Now
             };
         }
+
+        [HttpGet]
+        public List<Student> GetAll()
+        {
+            return InMemoryDB.Studenti;
+        }
     }
 }
